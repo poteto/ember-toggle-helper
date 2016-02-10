@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
-const { Helper: { helper } } = Ember;
+const { Helper: { helper }, get, set } = Ember;
 
 export function toggle([obj, prop]) {
   return function() {
-    obj.toggleProperty(prop);
+    set(obj, prop, !get(obj, prop));
   };
 }
 
