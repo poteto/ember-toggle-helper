@@ -1,0 +1,12 @@
+<h1>Employees</h1>
+
+<ul>
+  {{#each employees as |employee|}}
+    <li data-id={{dasherize employee.name}}>
+      {{employee.name}} {{if employee.isSuspended "has been" "has not been"}} suspended.
+      <button {{action (toggle employee "isSuspended")}} data-id={{concat (dasherize employee.name) "-button"}}>
+        {{if employee.isSuspended "Resume employment" "Suspend"}}
+      </button>
+    </li>
+  {{/each}}
+</ul>

@@ -1,6 +1,20 @@
-# Ember-toggle-helper
+# ember-toggle-helper [![Build Status](https://travis-ci.org/poteto/ember-toggle-helper.svg?branch=master)](https://travis-ci.org/poteto/ember-toggle-helper) [![npm version](https://badge.fury.io/js/ember-toggle-helper.svg)](https://badge.fury.io/js/ember-toggle-helper)
 
-This README outlines the details of collaborating on this Ember addon.
+Dead simple toggle helper.
+
+```
+ember install ember-toggle-helper
+```
+
+## Usage
+
+Use the `toggle` helper as an action.
+
+```hbs
+<button {{action (toggle this "isExpanded")}}>
+  {{if isExpanded "I am expanded" "I am not"}}
+</button>
+```
 
 ## Installation
 
