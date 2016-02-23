@@ -1,5 +1,10 @@
 # ember-toggle-helper [![Build Status](https://travis-ci.org/poteto/ember-toggle-helper.svg?branch=master)](https://travis-ci.org/poteto/ember-toggle-helper) [![npm version](https://badge.fury.io/js/ember-toggle-helper.svg)](https://badge.fury.io/js/ember-toggle-helper)
 
+## This addon has been deprecated and is no longer maintained
+The `toggle` helper has been merged into [`ember-composable-helpers`](https://github.com/DockYard/ember-composable-helpers#toggle), please use that instead. You can specify to `only` import the `toggle` helper if you wish.
+
+---
+
 Dead simple toggle helper.
 
 ```
